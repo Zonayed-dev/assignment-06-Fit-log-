@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import PlanBadges from "./PlanBadges";
 export default function Navbar() {
   return (
     <nav className="border-b border-white/10 bg-black">
@@ -33,22 +33,8 @@ export default function Navbar() {
             MY PLAN
           </Link>
         </div>
+        <PlanBadges />
 
-        <div className="flex items-center gap-2">
-          <Link
-            href="/my-plan"
-            className="rounded-full bg-[#ccff00] px-3 py-1.5 text-xs font-bold text-black"
-          >
-            PLAN 0
-          </Link>
-
-          <Link
-            href="/my-plan"
-            className="rounded-full border border-white/20 px-3 py-1.5 text-xs font-bold text-white"
-          >
-            SAVED 0
-          </Link>
-        </div>
       </div>
     </nav>
   );
