@@ -6,7 +6,10 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white">
-      <section className="mx-auto max-w-7xl px-4 py-16 md:px-6">
+      <section
+        id="library"
+        className="mx-auto max-w-7xl px-4 py-16 md:px-6"
+      >
         <div className="mb-10">
           <p className="text-sm font-bold tracking-[0.2em] text-[#ccff00]">
             WORKOUT LIBRARY
